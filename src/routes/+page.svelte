@@ -1,7 +1,8 @@
 <script lang="ts">
+
     import type { Scene } from "phaser";
-    import PhaserGame, { type TPhaserRef } from "../game/PhaserGame.svelte";
     import type { MainMenu } from "../game/scenes/MainMenu";
+    import PhaserGame, { type TPhaserRef } from "../game/PhaserGame.svelte";
 
     // The sprite can only be moved in the MainMenu Scene
     let canMoveSprite = false;
@@ -103,6 +104,7 @@
         justify-content: center;
         align-items: center;
     }
+    
     .spritePosition {
         margin: 10px 0 0 10px;
         font-size: 0.8em;
