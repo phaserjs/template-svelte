@@ -17,7 +17,7 @@
 
         if (scene)
         {
-            //  Call the changeScene method defined in the `MainMenu`, `Game` and `GameOver` Scenes
+            // Call the changeScene method defined in the `MainMenu`, `Game` and `GameOver` Scenes
             scene.changeScene();
         }
 
