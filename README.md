@@ -42,7 +42,7 @@ We have provided a default project structure to get you started. This is as foll
 - `src/app.d.ts` - Global TypeScript declarations, provide types information.
 - `src/routes/+layout.svelte` - Svelte layout component. Here, the page title and the global styles are defined.
 - `src/+page.svelte` - Svelte page that integrates the functionality of the game created with Phaser.
-- `src/game` - Containts the game source code.
+- `src/game` - Contains the game source code.
 - `src/game/PhaserGame.svelte` - The Svelte component that initializes the Phaser Game and serve like a bridge between Svelte and Phaser.
 
 - `src/game/EventBus.ts` - A simple event bus to communicate between Svelte and Phaser.
