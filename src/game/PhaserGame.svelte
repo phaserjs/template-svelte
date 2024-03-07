@@ -12,7 +12,6 @@
 <script lang="ts">
 
     import { onMount } from "svelte";
-    
     import StartGame from "./main";
     import { EventBus } from './EventBus';
 
@@ -33,7 +32,9 @@
 
             if(currentActiveScene)
             {
+                
                 currentActiveScene(scene_instance);
+                
             }
 
         });

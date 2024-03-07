@@ -17,8 +17,10 @@
 
         if (scene)
         {
+
             // Call the changeScene method defined in the `MainMenu`, `Game` and `GameOver` Scenes
             scene.changeScene();
+
         }
 
     }
@@ -29,6 +31,7 @@
 
         if (scene)
         {
+
             // Get the update logo position
             (scene as MainMenu).moveLogo(({ x, y }) => {
 
@@ -36,6 +39,7 @@
                 spritePosition.y = y;
 
             });
+
         }
 
     }
@@ -46,6 +50,7 @@
 
         if (scene)
         {
+
             // Add more stars
             const x = Phaser.Math.Between(64, scene.scale.width - 64);
             const y = Phaser.Math.Between(64, scene.scale.height - 64);
@@ -63,6 +68,7 @@
                 yoyo: true,
                 repeat: -1
             });
+            
         }
 
     }

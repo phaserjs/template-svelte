@@ -107,7 +107,7 @@ You don't have to emit this event if you don't need to access the specific scene
 
 Here's an example of how to access Phaser data for use in a Svelte Component:
 
-```typescript
+```js
 // In a parent component
 <script lang="ts">
     import type { Scene } from "phaser";
