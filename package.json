@@ -1,7 +1,7 @@
 {
 	"name": "template-svelte",
 	"description": "A Phaser 3 project template that demonstrates Svelte communication and uses Vite for bundling.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"repository": {
         "type": "git",
         "url": "git+https://github.com/phaserjs/template-svelte.git"

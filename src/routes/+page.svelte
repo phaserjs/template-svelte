@@ -83,7 +83,7 @@
 </script>
 
 <div id="app">
-    <PhaserGame phaserRef={phaserRef} currentActiveScene={currentScene} />
+    <PhaserGame bind:phaserRef={phaserRef} currentActiveScene={currentScene} />
     <div>
         <div>
             <button class="button" on:click={changeScene}>Change Scene</button>
