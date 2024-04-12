@@ -20,7 +20,7 @@
         scene: null
     };
 
-    export let currentActiveScene: (scene: Scene) => void;
+    export let currentActiveScene: (scene: Scene) => void | undefined;
 
     onMount(() => {
 
