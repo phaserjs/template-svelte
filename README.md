@@ -2,7 +2,7 @@
 
 This is a Phaser 3 project template that uses the Svelte framework, TypeScript and Vite for bundling. It includes a bridge for Svelte to Phaser game communication, hot-reloading for quick development workflow and scripts to generate production-ready builds.
 
-### Versions
+## Versions
 
 This template has been updated for:
 
@@ -24,6 +24,7 @@ This template has been updated for:
 | `npm install` | Install project dependencies |
 | `npm run dev` | Launch a development web server |
 | `npm run build` | Create a production build in the `build` folder |
+| `npm run preview` | Launch a web server of the production build from the `build` folder |
 
 ## Writing Code
 
@@ -81,7 +82,6 @@ In Phaser, the Scene is the lifeblood of your game. It is where you sprites, gam
 You can get the current Phaser Scene from the component event `"current-active-scene"`. In order to do this, you need to emit the event `"current-scene-ready"` from the Phaser Scene class. This event should be emitted when the scene is ready to be used. You can see this done in all of the Scenes in our template.
 
 **Important**: When you add a new Scene to your game, make sure you expose to Svelte by emitting the `"current-scene-ready"` event via the `EventBus`, like this:
-
 
 ```js
 class MyScene extends Phaser.Scene
@@ -164,21 +164,23 @@ If you want to customize your build, such as adding plugin (i.e. for loading CSS
 Normally, SvelteKit renders your page on the server first and sends that HTML to the client where it's hydrated. If you set ssr to false, it renders an empty 'shell' page instead. This is useful if your page is unable to be rendered on the server (because you use browser-only globals like document for example).
 
 Phaser needs to run on the client, therefore in the file `src/routes/+layout.js` we have added the line:
+
 ```javascript
 export const ssr = false;
 ```
+
 Please do not modify this line unless you know what you are doing and can resolve all related issues with SSR.
 
-## Join the Phaser Community!
+## Join the Phaser Community
 
 We love to see what developers like you create with Phaser! It really motivates us to keep improving. So please join our community and show-off your work 😄
 
-**Visit:** The [Phaser website](https://phaser.io) and follow on [Phaser Twitter](https://twitter.com/phaser_)<br />
-**Play:** Some of the amazing games [#madewithphaser](https://twitter.com/search?q=%23madewithphaser&src=typed_query&f=live)<br />
-**Learn:** [API Docs](https://newdocs.phaser.io), [Support Forum](https://phaser.discourse.group/) and [StackOverflow](https://stackoverflow.com/questions/tagged/phaser-framework)<br />
-**Discord:** Join us on [Discord](https://discord.gg/phaser)<br />
-**Code:** 2000+ [Examples](https://labs.phaser.io)<br />
-**Read:** The [Phaser World](https://phaser.io/community/newsletter) Newsletter<br />
+**Visit:** The [Phaser website](https://phaser.io) and follow on [Phaser Twitter](https://twitter.com/phaser_)  
+**Play:** Some of the amazing games [#madewithphaser](https://twitter.com/search?q=%23madewithphaser&src=typed_query&f=live)  
+**Learn:** [API Docs](https://newdocs.phaser.io), [Support Forum](https://phaser.discourse.group/) and [StackOverflow](https://stackoverflow.com/questions/tagged/phaser-framework)  
+**Discord:** Join us on [Discord](https://discord.gg/phaser)  
+**Code:** 2000+ [Examples](https://labs.phaser.io)  
+**Read:** The [Phaser World](https://phaser.io/community/newsletter) Newsletter  
 
 Created by [Phaser Studio](mailto:support@phaser.io). Powered by coffee, anime, pixels and love.
 
