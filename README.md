@@ -19,11 +19,12 @@ This template has been updated for:
 
 ## Available Commands
 
-| Command         | Description                                     |
-| --------------- | ----------------------------------------------- |
-| `npm install`   | Install project dependencies                    |
-| `npm run dev`   | Launch a development web server                 |
-| `npm run build` | Create a production build in the `build` folder |
+| Command          | Description                                     |
+| ---------------- | ----------------------------------------------- |
+| `npm install`    | Install project dependencies                    |
+| `npm run dev`    | Launch a development web server                 |
+| `npm run build`  | Create a production build in the `build` folder |
+| `npm run format` | Formats the code                                |
 
 ## Writing Code
 
@@ -44,7 +45,6 @@ We have provided a default project structure to get you started. This is as foll
 - `src/+page.svelte` - Svelte page that integrates the functionality of the game created with Phaser.
 - `src/game` - Contains the game source code.
 - `src/game/PhaserGame.svelte` - The Svelte component that initializes the Phaser Game and serve like a bridge between Svelte and Phaser.
-
 - `src/game/EventBus.ts` - A simple event bus to communicate between Svelte and Phaser.
 - `src/game/main.ts` - The main **game** entry point. This contains the game configuration and start the game.
 - `src/game/scenes/` - The Phaser Scenes are in this folder.
