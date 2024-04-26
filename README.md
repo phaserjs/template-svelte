@@ -19,10 +19,10 @@ This template has been updated for:
 
 ## Available Commands
 
-| Command | Description |
-|---------|-------------|
-| `npm install` | Install project dependencies |
-| `npm run dev` | Launch a development web server |
+| Command         | Description                                     |
+| --------------- | ----------------------------------------------- |
+| `npm install`   | Install project dependencies                    |
+| `npm run dev`   | Launch a development web server                 |
 | `npm run build` | Create a production build in the `build` folder |
 
 ## Writing Code
@@ -58,15 +58,15 @@ To communicate between Svelte and Phaser, you can use the **EventBus.ts** file. 
 
 ```js
 // In Svelte
-import { EventBus } from './EventBus';
+import { EventBus } from "./EventBus";
 
 // Emit an event
-EventBus.emit('event-name', data);
+EventBus.emit("event-name", data);
 
 // In Phaser
 // Listen for an event
-EventBus.on('event-name', (data) => {
-    // Do something with the data
+EventBus.on("event-name", (data) => {
+  // Do something with the data
 });
 ```
 
@@ -82,22 +82,18 @@ You can get the current Phaser Scene from the component event `"current-active-s
 
 **Important**: When you add a new Scene to your game, make sure you expose to Svelte by emitting the `"current-scene-ready"` event via the `EventBus`, like this:
 
-
 ```js
-class MyScene extends Phaser.Scene
-{
-    constructor ()
-    {
-        super('MyScene');
-    }
+class MyScene extends Phaser.Scene {
+  constructor() {
+    super("MyScene");
+  }
 
-    create ()
-    {
-        // Your Game Objects and logic here
+  create() {
+    // Your Game Objects and logic here
 
-        // At the end of create method:
-        EventBus.emit('current-scene-ready', this);
-    }
+    // At the end of create method:
+    EventBus.emit("current-scene-ready", this);
+  }
 }
 ```
 
@@ -116,7 +112,7 @@ Here's an example of how to access Phaser data for use in a Svelte Component:
     let phaserRef: TPhaserRef = { game: null, scene: null};
 
     const onCurrentActiveScene = (scene) => {
-        
+
         // This is invoked
 
     }
@@ -137,11 +133,11 @@ The `onCurrentActiveScene` callback will also be invoked whenever the the Phaser
 To load your static games files such as audio files, images, videos, etc place them into the `static/assets` folder. Then you can use this path in the Loader calls within Phaser:
 
 ```js
-preload ()
+preload();
 {
-    //  This is an example of loading a static image
-    //  from the static/assets folder:
-    this.load.image('background', 'assets/bg.png');
+  //  This is an example of loading a static image
+  //  from the static/assets folder:
+  this.load.image("background", "assets/bg.png");
 }
 ```
 
@@ -151,7 +147,7 @@ When you issue the `npm run build` command, all static assets are automatically 
 
 After you run the `npm run build` command, your code will be built into a single bundle and saved to the `build` folder, along with any other assets your project imported, or stored in the public assets folder.
 
-In order to deploy your game, you will need to upload *all* of the contents of the `build` folder to a public facing web server.
+In order to deploy your game, you will need to upload _all_ of the contents of the `build` folder to a public facing web server.
 
 ## Customizing the Template
 
@@ -164,9 +160,11 @@ If you want to customize your build, such as adding plugin (i.e. for loading CSS
 Normally, SvelteKit renders your page on the server first and sends that HTML to the client where it's hydrated. If you set ssr to false, it renders an empty 'shell' page instead. This is useful if your page is unable to be rendered on the server (because you use browser-only globals like document for example).
 
 Phaser needs to run on the client, therefore in the file `src/routes/+layout.js` we have added the line:
+
 ```javascript
 export const ssr = false;
 ```
+
 Please do not modify this line unless you know what you are doing and can resolve all related issues with SSR.
 
 ## Join the Phaser Community!

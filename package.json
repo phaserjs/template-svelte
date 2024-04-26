@@ -1,42 +1,45 @@
 {
-	"name": "template-svelte",
-	"description": "A Phaser 3 project template that demonstrates Svelte communication and uses Vite for bundling.",
-	"version": "1.0.3",
-	"repository": {
-        "type": "git",
-        "url": "git+https://github.com/phaserjs/template-svelte.git"
-    },
-    "author": "Phaser Studio <support@phaser.io> (https://phaser.io/)",
-    "license": "MIT",
-    "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
-    "bugs": {
-        "url": "https://github.com/phaserjs/template-svelte/issues"
-    },
-    "homepage": "https://github.com/phaserjs/template-svelte#readme",
-    "keywords": [
-        "phaser",
-        "phaser3",
-        "svelte",
-        "vite"
-    ],
-	"scripts": {
-		"dev": "vite --config vite/config.dev.mjs",
-		"build": "vite build --config vite/config.prod.mjs"
-	},
-	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.1.1",
-		"@sveltejs/adapter-static": "^3.0.1",
-		"@sveltejs/kit": "^2.5.2",
-		"@sveltejs/vite-plugin-svelte": "^3.0.2",
-		"svelte": "^4.2.12",
-		"svelte-check": "^3.6.6",
-		"terser": "^5.28.1",
-		"tslib": "^2.6.2",
-		"typescript": "^5.3.3",
-		"vite": "^5.1.4"
-	},
-	"type": "module",
-	"dependencies": {
-		"phaser": "^3.80.1"
-	}
+  "name": "template-svelte",
+  "description": "A Phaser 3 project template that demonstrates Svelte communication and uses Vite for bundling.",
+  "version": "1.0.3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phaserjs/template-svelte.git"
+  },
+  "author": "Phaser Studio <support@phaser.io> (https://phaser.io/)",
+  "license": "MIT",
+  "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+  "bugs": {
+    "url": "https://github.com/phaserjs/template-svelte/issues"
+  },
+  "homepage": "https://github.com/phaserjs/template-svelte#readme",
+  "keywords": [
+    "phaser",
+    "phaser3",
+    "svelte",
+    "vite"
+  ],
+  "scripts": {
+    "dev": "vite --config vite/config.dev.mjs",
+    "build": "vite build --config vite/config.prod.mjs",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^3.1.1",
+    "@sveltejs/adapter-static": "^3.0.1",
+    "@sveltejs/kit": "^2.5.2",
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "prettier": "^3.2.5",
+    "prettier-plugin-svelte": "^3.2.3",
+    "svelte": "^4.2.12",
+    "svelte-check": "^3.6.6",
+    "terser": "^5.28.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.4"
+  },
+  "type": "module",
+  "dependencies": {
+    "phaser": "^3.80.1"
+  }
 }
