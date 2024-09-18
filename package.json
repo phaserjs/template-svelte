@@ -39,6 +39,6 @@
     },
     "type": "module",
     "dependencies": {
-        "phaser": "^3.85.1"
+        "phaser": "^3.85.2"
     }
 }

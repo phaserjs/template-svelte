@@ -6,7 +6,7 @@ This is a Phaser 3 project template that uses the Svelte framework, TypeScript a
 
 This template has been updated for:
 
-- [Phaser 3.85.1](https://github.com/phaserjs/phaser)
+- [Phaser 3.85.2](https://github.com/phaserjs/phaser)
 - [Svelte 4.2.17](https://github.com/sveltejs/kit)
 - [Vite 5.2.11](https://github.com/vitejs/vite)
 - [TypeScript 5.4.5](https://github.com/microsoft/TypeScript)
