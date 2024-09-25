@@ -1,4 +1,4 @@
-import { GameObjects, Scene } from 'phaser';
+import { type GameObjects, Scene } from 'phaser';
 
 import { EventBus } from '../EventBus';
 
