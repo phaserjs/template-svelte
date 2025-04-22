@@ -7,9 +7,9 @@ This is a Phaser 3 project template that uses the Svelte framework, TypeScript a
 This template has been updated for:
 
 - [Phaser 3.88.2](https://github.com/phaserjs/phaser)
-- [Svelte 4.2.17](https://github.com/sveltejs/kit)
-- [Vite 5.2.11](https://github.com/vitejs/vite)
-- [TypeScript 5.4.5](https://github.com/microsoft/TypeScript)
+- [Svelte 5.23.1](https://github.com/sveltejs/kit)
+- [Vite 6.3.1](https://github.com/vitejs/vite)
+- [TypeScript 5.7.2](https://github.com/microsoft/TypeScript)
 
 ![screenshot](screenshot.png)
 
@@ -39,18 +39,19 @@ Once the server is running you can edit any of the files in the `src` folder. Vi
 
 We have provided a default project structure to get you started. This is as follows:
 
-- `src` - Contains the Svelte source code.
-- `src/app.html` - The html Svelte container.
-- `src/app.d.ts` - Global TypeScript declarations, provide types information.
-- `src/routes/+layout.svelte` - Svelte layout component. Here, the page title and the global styles are defined.
-- `src/+page.svelte` - Svelte page that integrates the functionality of the game created with Phaser.
-- `src/game` - Contains the game source code.
-- `src/game/PhaserGame.svelte` - The Svelte component that initializes the Phaser Game and serve like a bridge between Svelte and Phaser.
-
-- `src/game/EventBus.ts` - A simple event bus to communicate between Svelte and Phaser.
-- `src/game/main.ts` - The main **game** entry point. This contains the game configuration and start the game.
-- `src/game/scenes/` - The Phaser Scenes are in this folder.
-- `static/assets` - Contains the static assets used by the game.
+| Path                          | Description                                                                 |
+|-------------------------------|-----------------------------------------------------------------------------|
+| `src`                         | Contains the Svelte source code.                                           |
+| `src/app.html`                | The HTML Svelte container.                                                 |
+| `src/app.d.ts`                | Global TypeScript declarations, providing type information.                |
+| `src/routes/+layout.svelte`   | Svelte layout component where the page title and global styles are defined.|
+| `src/+page.svelte`            | Svelte page that integrates the functionality of the game created with Phaser.|
+| `src/PhaserGame.svelte`       | The Svelte component that initializes the Phaser game and acts as a bridge between Svelte and Phaser.|
+| `src/game`                    | Contains the game source code.                                             |
+| `src/game/EventBus.ts`        | A simple event bus to communicate between Svelte and Phaser.               |
+| `src/game/main.ts`            | The main **game** entry point containing the game configuration and starting the game.|
+| `src/game/scenes/`            | Folder containing the Phaser Scenes.                                       |
+| `static/assets`               | Contains the static assets used by the game.                              |
 
 ## Svelte Bridge
 
@@ -230,6 +231,6 @@ We love to see what developers like you create with Phaser! It really motivates 
 
 Created by [Phaser Studio](mailto:support@phaser.io). Powered by coffee, anime, pixels and love.
 
-The Phaser logo and characters are &copy; 2011 - 2024 Phaser Studio Inc.
+The Phaser logo and characters are &copy; 2011 - 2025 Phaser Studio Inc.
 
 All rights reserved.

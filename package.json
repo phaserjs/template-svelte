@@ -1,7 +1,7 @@
 {
     "name": "template-svelte",
     "description": "A Phaser 3 project template that demonstrates Svelte communication and uses Vite for bundling.",
-    "version": "1.1.2",
+    "version": "1.2.0",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/phaserjs/template-svelte.git"
@@ -27,16 +27,17 @@
         "preview": "vite preview --outDir build"
     },
     "devDependencies": {
-        "@sveltejs/adapter-auto": "^3.2.0",
-        "@sveltejs/adapter-static": "^3.0.1",
-        "@sveltejs/kit": "^2.5.8",
-        "@sveltejs/vite-plugin-svelte": "^3.1.0",
-        "svelte": "^4.2.17",
+        "@tsconfig/svelte": "^5.0.4",
+        "@sveltejs/adapter-auto": "6.0.0",
+        "@sveltejs/adapter-static": "3.0.8",
+        "@sveltejs/kit": "2.20.7",
+        "@sveltejs/vite-plugin-svelte": "5.0.3",
+        "svelte": "5.23.1",
         "svelte-check": "^4.0.2",
-        "terser": "^5.31.0",
-        "tslib": "^2.6.2",
-        "typescript": "^5.4.5",
-        "vite": "^5.2.11"
+        "terser": "5.39.0",
+        "tslib": "2.7.0",
+        "typescript": "5.7.2",
+        "vite": "6.3.1"
     },
     "type": "module",
     "dependencies": {

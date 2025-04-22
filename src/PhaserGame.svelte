@@ -12,8 +12,8 @@
 <script lang="ts">
 
     import { onMount } from "svelte";
-    import StartGame from "./main";
-    import { EventBus } from './EventBus';
+    import StartGame from "./game/main";
+    import { EventBus } from './game/EventBus';
 
     export let phaserRef: TPhaserRef = {
         game: null,
